@@ -1,0 +1,22 @@
+@page
+@model MINOR2.Pages.Pagina2Model
+@{
+    ViewData["Title"] = "Pagina 2";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Je hebt @Model.EersteGetal gekozen</h1>
+    <p>Kies nu een tweede getal:</p>
+    <p>
+        <a href="/Pagina3?eerste=@Model.EersteGetal&tweede=6">6</a>
+    </p>
+    <p>
+        <a href="/Pagina3?eerste=@Model.EersteGetal&tweede=7">7</a>
+    </p>
+    <p>
+        <a href="/Pagina3?eerste=@Model.EersteGetal&tweede=8">8</a>
+    </p>
+    <p>
+        <a href="/Pagina3?eerste=@Model.EersteGetal&tweede=9">9</a>
+    </p>
+</div>
