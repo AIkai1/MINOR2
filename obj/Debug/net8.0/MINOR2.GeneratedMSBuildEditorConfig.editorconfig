@@ -18,6 +18,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /workspaces/MINOR2
 build_property._RazorSourceGeneratorDebug = 
 
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/Bestel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvQmVzdGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MINOR2/opr3/Opdracht_3_1/opdr3/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b3ByMy9PcGRyYWNodF8zXzEvb3BkcjMvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/MINOR2/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
