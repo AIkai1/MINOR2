@@ -1,0 +1,57 @@
+@page
+@model BestelModel
+@{
+    ViewData["Title"] = "Bestel";
+}
+
+<div class="container">
+    <h2>Bestellen: @Model.BankNaam</h2>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Bank Details:</h4>
+            @if (!string.IsNullOrEmpty(Model.BankType))
+            {
+                <p><strong>Type:</strong> @Model.BankType</p>
+            }
+            <p><strong>Beschrijving:</strong> @Model.BankBeschrijving</p>
+            @if (!string.IsNullOrEmpty(Model.BankPrijs))
+            {
+                <p><strong>Prijs:</strong> €@Model.BankPrijs</p>
+            }
+            <img src="/Images/@(Model.BankNaam).jpg" alt="@Model.BankNaam" class="img-fluid mb-4" style="max-width: 300px;" />
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4>Bestelformulier</h4>
+            <form method="post">
+                <input type="hidden" name="bank" value="@Model.BankNaam"/>
+                
+                <div class="form-group mb-3">
+                    <label for="naam">Naam:</label>
+                    <input type="text" class="form-control" id="naam" name="naam" required />
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="telefoon">Telefoon:</label>
+                    <input type="tel" class="form-control" id="telefoon" name="telefoon" />
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="adres">Adres:</label>
+                    <textarea class="form-control" id="adres" name="adres" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-danger">Bestellen</button>
+                <a href="/" class="btn btn-danger">Terug</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h4 class="display-4">Welkom bij Lekker Zitten</h4>
+    <table width="764" height="496" border="1" cellpadding="4" cellspacing="4" bordercolor="#999999">
+        <tr>
+            <td width='161'>
+                <img src='/Images/Armour.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Armour">Bekijk</a>
+            </td>
+            <td width='467' rowspan='3'>
+                @if (!string.IsNullOrEmpty(Model.BankNaam))
+                {
+                    <div class="p-3">
+                        <h5 class="text-success">Bestelling Bevestigd!</h5>
+                        <hr />
+                        <p><strong>Bank:</strong> @Model.BankNaam</p>
+                        <p><strong>Naam:</strong> @Model.KlantNaam</p>
+                        <p><strong>Email:</strong> @Model.Email</p>
+                        @if (!string.IsNullOrEmpty(Model.Telefoon))
+                        {
+                            <p><strong>Telefoon:</strong> @Model.Telefoon</p>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Adres))
+                        {
+                            <p><strong>Adres:</strong> @Model.Adres</p>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.BestelDatum))
+                        {
+                            <p><strong>Besteldatum:</strong> @Model.BestelDatum</p>
+                            <p><strong>Verwachte leverdatum:</strong> @Model.LeverDatum</p>
+                        }
+                        <div class="alert alert-success mt-3">
+                            <small>Bedankt voor uw bestelling! We nemen spoedig contact met u op.</small>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="p-3 text-center text-muted">
+                        <p>Selecteer een bank om te bestellen</p>
+                    </div>
+                }
+            </td>
+            <td width='161'>
+                <img src='/Images/Baltica.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Baltica">Bekijk</a>
+            </td>
+        </tr>
+        <tr>
+            <td width='161'>
+                <img src='/Images/Bari.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Bari">Bekijk</a>
+            </td>
+            <td width='161'>
+                <img src='/Images/Canada.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Canada">Bekijk</a>
+            </td>
+        </tr>
+        <tr>
+            <td width='161'>
+                <img src='/Images/Colorado.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Colorado">Bekijk</a>
+            </td>
+            <td width='161'>
+                <img src='/Images/Hawaii.jpg' />
+                <a class="btn btn-danger" href="/Bestel?bank=Hawaii">Bekijk</a>
+            </td>
+        </tr>
+    </table>
+</div>
